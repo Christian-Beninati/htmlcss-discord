@@ -11,6 +11,9 @@
     --font-blue: #7289DA;
     --button-light-blue: #8EA1E1;
     --bgd-header-bar: #255EE9;
+    --bgd-main-grey: #F6F6F6;
+    --size-font-big: 50px;
+    --size-font-small: 22px;
 }
 
 /* generics */
@@ -107,7 +110,7 @@ header {
 }
 
 .content-jumbotron > p {
-    font-size: 22px;
+    font-size: var(--size-font-small);
     color: var(--font-white);
 }
 
@@ -136,48 +139,75 @@ header {
     align-items: center;
 }
 
-.left-column-main{
+.left-column-main, .right-column-mid { 
     flex-basis: 40%;
-    background-color: #2C90FF;
 }
 
-.right-column-main {
+.right-column-main, .left-column-mid {
     flex-basis: 25%;
-    background-color: #FCC0CB;
 }
 
 .left-column-main, .right-column-main, .left-column-mid, .right-column-mid{
     height: 500px;
 }
 
+ section  h2 {
+    font-size: var(--size-font-big);
+}
+
+section  p {
+    font-size: var(--size-font-small);
+}
+
+section p, section h2 {
+    padding: 20px 30px;
+}
+
 /* main column middle */
 
-.left-column-mid {
-    flex-basis: 25%;
-    background-color: #FCC0CB;
-}
-
-.right-column-mid {
-    flex-basis: 40%;
-    background-color: #2C90FF;
-}
-
 .container-column-middle {
-    background-color: #D3D3D3;
+    background-color: var(--bgd-main-grey);
 }
 
 /* main square block */
 .container-square {
-    height: 900px;
-    background-color: #D3D3D3;
+    height: 1300px;
+    background-color: var(--bgd-main-grey);
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.square-block  .img-cent {
+    width: 1100px;
+}
+
+.square-block h3 {
+    font-size: 30px;
 }
 
 .square-block {
-    flex-basis: 65%;
-    height: 800px;
-    background-color: #228B22;
+    flex-basis: 64%;
+    height: 1100px;
+}
+
+.square-block  .download {
+    background: var(--button-light-blue);
+}
+
+.square-block a {
+    color: var(--font-white);
+}
+
+/* wave */
+.wave {
+  display: block;
+  color: var(--bgd-main-grey);
+}
+
+.upside-down {
+    rotate: 0.5turn;
+    color: var(--bgd-main-grey);
 }
 
 /* main footer */
