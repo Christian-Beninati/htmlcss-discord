@@ -52,10 +52,6 @@ button {
     background-color: #ffff;
 }
 
-button > a {
-    color: black;
-}
-
 /* header bar */
 header {
     height: 80px;
@@ -129,10 +125,12 @@ header {
     background-color: black;
 }
 
-.butt-open-brow > a {
+.butt-open-brow {
     color: var(--font-white);
 }
-
+.butt-download {
+    color: black;
+}
 /* main column */
 .container-column-main, .container-column-middle {
     height: 600px;
@@ -192,12 +190,16 @@ section p, section h2 {
     height: 1100px;
 }
 
-.square-block  .butt-download, .butt-register {
+.square-block  .butt-download-blue, .butt-register {
     background: var(--button-light-blue);
 }
 
-.square-block a {
-    color: var(--font-white);
+.butt-download-blue {
+    color: white;
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+
 }
 
 /* wave */
@@ -295,6 +297,6 @@ footer i {
     height: 20px;
 }
 
-.btn-footer-left a {
+.butt-register {
     color: var(--font-white);
 }
