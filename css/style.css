@@ -256,11 +256,8 @@ footer i {
     flex-basis: calc(100% / 4 );
 }
 
-.small-column ul {
+.small-column p {
      color: var(--font-color-footer);
-     list-style-type: none;
-     text-align: left;
-     padding-left: 20px;
 }
 
 .small-column li {
