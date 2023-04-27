@@ -10,12 +10,12 @@
     --font-white: #FFFFFF;
     --font-blue: #7289DA;
     --button-light-blue: #8EA1E1;
-    --bgd-header-bar: #3161E0;
+    --bgd-header-bar: #255EE9;
 }
 
 /* generics */
 body {
-    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Whitney", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* utilities */
@@ -54,7 +54,7 @@ button > a {
 
 /* header bar */
 header {
-    height: 60px;
+    height: 80px;
     background-color: var(--bgd-header-bar);
     align-items: center;
     justify-content: center;
@@ -86,15 +86,47 @@ header {
 
 .container-jumbotron {
     height: 500px;
-    background-color: #0A0C8B;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
     justify-content: center;
+    background-position: center;
     align-items: center;
 }
 
-.block-jumbotron {
-    flex-basis: 800px;
+.content-jumbotron {
+    flex-basis: 875px;
     height: 400px;
-    background-color: #EE82EE;
+    text-align: center;
+    padding: 5px;
+}
+
+.content-jumbotron > h1 {
+    font-size: 60px;
+    color: var(--font-white);
+    padding-bottom: 40px;
+}
+
+.content-jumbotron > p {
+    font-size: 22px;
+    color: var(--font-white);
+}
+
+.download, .open-brow {
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 1px transparent;
+    cursor: pointer;
+    background-color: #ffff;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.open-brow {
+    background-color: black;
+}
+
+.open-brow > a {
+    color: var(--font-white);
 }
 
 /* main column */
