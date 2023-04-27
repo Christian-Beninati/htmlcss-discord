@@ -119,6 +119,7 @@ header {
     background-color: #ffff;
     margin-top: 30px;
     font-size: 20px;
+    margin-left: 40px;
 }
 
 .butt-open-brow {
@@ -137,7 +138,9 @@ header {
     justify-content: center;
     align-items: center;
 }
-
+.container-column-main{
+    margin-top: 100px;
+}
 .left-column-main, .right-column-mid { 
     flex-basis: 40%;
 }
