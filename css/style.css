@@ -120,18 +120,14 @@ header {
     margin-top: 30px;
     font-size: 20px;
     margin-left: 40px;
+    color: black;
 }
 
 .butt-open-brow {
     background-color: black;
-}
-
-.butt-open-brow {
     color: var(--font-white);
 }
-.butt-download {
-    color: black;
-}
+
 /* main column */
 .container-column-main, .container-column-middle {
     height: 600px;
@@ -147,10 +143,6 @@ header {
 
 .right-column-main, .left-column-mid {
     flex-basis: 25%;
-}
-
-.left-column-main, .right-column-main, .left-column-mid, .right-column-mid{
-    height: 500px;
 }
 
  section  h2 {
@@ -173,7 +165,6 @@ section p, section h2 {
 
 /* main square block */
 .container-square {
-    height: 1300px;
     background-color: var(--bgd-main-grey);
     justify-content: center;
     text-align: center;
@@ -193,7 +184,7 @@ section p, section h2 {
     height: 1100px;
 }
 
-.square-block  .butt-download-blue, .butt-register {
+.butt-download-blue, .butt-register {
     background: var(--button-light-blue);
 }
 
@@ -202,7 +193,6 @@ section p, section h2 {
     margin-top: 20px;
     padding: 15px 20px;
     font-size: 20px;
-
 }
 
 /* wave */
@@ -219,7 +209,6 @@ section p, section h2 {
 /* main footer */
 .main-footer {
     background-color: #24272A;
-    height: 600px;
     align-items: center;
     justify-content: center;
 }
@@ -227,15 +216,14 @@ section p, section h2 {
 .left-column-footer {
     height: 500px;
     flex-basis: 15%;
-}
+    margin-top: 45px;
+} 
 
 .ita-flag {
-    display: inline-block;
     width: 40px;
-    vertical-align: middle;
 }
 
-footer p {
+footer p, .ita-flag  {
     display: inline-block;
     vertical-align: middle;
 }
@@ -255,14 +243,12 @@ footer i {
 .right-column-footer {
     height: 500px;
     flex-basis: 45%;
+    margin-top: 50px;
 }
 
-.small-column {
+.small-column, .small-column p  {
     flex-basis: calc(100% / 4 );
-}
-
-.small-column p {
-     color: var(--font-color-footer);
+    color: var(--font-color-footer);
 }
 
 .small-column li {
@@ -283,14 +269,9 @@ footer i {
 }
 
 .bar-footer {
-    /* background-color: #7FFDD4; */
     flex-basis: 65%;
     height: 85px;
     border-top: 1px solid var(--font-blue);
-}
-
-.bar-footer {
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
